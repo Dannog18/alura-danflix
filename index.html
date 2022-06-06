@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<html>
+
+<head>
+  <title>
+    Imersão Dev - Aula 05
+  </title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Danflix
+    </h1>
+
+    <h2 id="error"></h2>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+
+    <div class="form-wrapper"> <br>
+      <input type="text" id="nome" placeholder="Insira o nome do filme"><br>
+      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+      <button onClick="adicionarFilme()">Adicionar Filme</button><br><br>
+
+    </div>
+  </div>
+
+  <div>
+    <ul id="listaFilmes">
+      <!--       <li>
+        <img src="https://th.bing.com/th/id/R.18e8c600ecc1f3782e458b0c849ec551?rik=0A7BaSF9KgKkvw&riu=http%3a%2f%2fwww.vortexcultural.com.br%2fimages%2f2017%2f08%2fum-contratempo.jpg&ehk=QQBMCCCDipbu4Qkx4e9jOyN4DqOcyNf0vxg3n21om14%3d&risl=&pid=ImgRaw&r=0.png" alt=""><span>Um Contratempo</span>
+      </li>
+<li>
+<img src="https://th.bing.com/th/id/R.5e871b69b779ab1811de6fd20ccfd69f?rik=TympV9n7Pg5aTw&riu=http%3a%2f%2fbr.web.img3.acsta.net%2fpictures%2f19%2f12%2f10%2f00%2f10%2f1646487.jpg&ehk=4IBqd9dEU6lbUsaw42xo74fpvYmcWjsgcGBczwV79RY%3d&risl=&pid=ImgRaw&r=0.png" alt="">
+        <span>Entre Facas e Segredos</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/R.7672c1e83a949c02062b9bad3ec2d92c?rik=jkDxWmFwfXznOw&pid=ImgRaw&r=0.png" alt=""> <span>MI4: Protocolo Fantasma</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/R.6f09e56882ac09478f88abfa92f3994c?rik=inUa62FObzZPMQ&riu=http%3a%2f%2fbr.web.img3.acsta.net%2fpictures%2f15%2f06%2f26%2f16%2f09%2f448530.jpg&ehk=yR26UiXsN9Lzfx%2fexAcasTprpUgZb8Bf4XIRCDDn5w0%3d&risl=&pid=ImgRaw&r=0.png" alt=""> <span>MI5: Nação Secreta</span>
+      </li>
+
+      <li><img src="https://i.pinimg.com/originals/94/3b/ae/943baeaef7cf6a8847c53f3754228a19.jpg" alt=""> <span>MI6: Efeito Fallout</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/R.1ecb2c67798349f54381c5e00bff1522?rik=bKcAEicycD8cRA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-uE3YvyqD3_w%2fUAr2oF_uFbI%2fAAAAAAAABEA%2fIynPfaoaU6Y%2fs1600%2filha%2bdo%2bmedo%2bcapa.jpg&ehk=DjTitaoaJBEl26YhTi%2bcs8j1zd%2fqokhPAKKeQNEuc%2bo%3d&risl=&pid=ImgRaw&r=0.jpg" alt=""> <span>Ilha do Medo</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/R.a8102288da44acdbceef73255fe818bd?rik=1c7WFLWkdIrcSw&riu=http%3a%2f%2fwww.atoupeira.com.br%2fwp-content%2fuploads%2f2021%2f05%2fum-lugar-silencioso-parte-2-novo-poster-0505.jpg&ehk=A7ziPzGOmd%2fwIoi5M%2bwFTzwHHAz7uaL4oEU6InPDUJQ%3d&risl=&pid=ImgRaw&r=0.jpg" alt=""> <span>Lugar Silencioso</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/R.24fa4f72351f44586acc27a9979ce1c5?rik=pIpIkDGlK1Y6kw&riu=http%3a%2f%2fbr.web.img3.acsta.net%2fpictures%2f20%2f03%2f30%2f17%2f23%2f0866109.jpg&ehk=MTeNKkd8v4xkBNtX2RCqYIlZy%2bIN0lnV8I72bzs0ijY%3d&risl=&pid=ImgRaw&r=0.PNG" alt=""> <span>Resgate</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/OIP.EBtwM827Z-DmwpzbHJE7AgHaK4?pid=ImgDet&rs=1.jpg" alt=""> <span>O Regresso</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/OIP.pMhBmpUxRVcqNmqz-q4boAHaK-?pid=ImgDet&rs=1.png" alt=""> <span>Esquadrão 6</span>
+      </li>
+
+      <li><img src="https://th.bing.com/th/id/R.398d785e649bdce30a3ac88396eb8b65?rik=sjJRi3SXhUveXw&riu=http%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw342%2fvsvmurub7aShF1PIFJS2l2D5ArS.jpg&ehk=YLiH0F09zVC8108gDrt1BvgNusHZHJ0IfrnAD1spgow%3d&risl=&pid=ImgRaw&r=0.JPG" alt=""> <span>Fratura</span>
+      </li>
+      
+      <li><img src="https://th.bing.com/th/id/R.db720fc9d66059ceb387f4a1197684d1?rik=GWz4EPYGChkvfQ&riu=http%3a%2f%2ffr.web.img3.acsta.net%2fpictures%2f19%2f03%2f14%2f10%2f51%2f3421837.jpg&ehk=hcH1uJ%2ftaWqmIeMlTrYubWDYUG68Ney9Zp4B%2bGF5TEs%3d&risl=&pid=ImgRaw&r=0.jpg" alt=""> <span>US</span>
+      </li> 
+      
+  <li><img src="https://th.bing.com/th/id/R.33705917367b83efcff7d19ec04b124d?rik=%2bJNWqFW%2f5KzXeA&riu=http%3a%2f%2ftiffanyyong.com%2fwp-content%2fuploads%2f2016%2f08%2fjason-bourne-poster.jpg&ehk=naJAyuYNd8Zr%2bW2k3iP43W36%2fQO6MVGpz7QfDS6HIpw%3d&risl=&pid=ImgRaw&r=0.jpg" alt=""> <span>Jason Bourne</span>
+      </li> 
+
+<li><img src="https://poltronanerd.com.br/wp-content/uploads/2019/10/poltrona-007-poster-05out19.jpg" alt=""> <span>Sem Tempo Para Morrer</span>
+      </li> 
+
+<li><img src="https://th.bing.com/th/id/R.6148281db38d374642f8c73710b49ae0?rik=mcdCvwUg2VW7DA&riu=http%3a%2f%2fbr.web.img2.acsta.net%2fpictures%2f18%2f03%2f16%2f15%2f08%2f2019826.jpg&ehk=ix5YBHN05GApsQuPLjRxkFdxclPSgAaNR%2fCPug5hgbs%3d&risl=&pid=ImgRaw&r=0.png" alt=""> <span>Vingadores: Guerra Infinita</span>
+      </li> 
+
+<li><img src="https://th.bing.com/th/id/OIP.B4X2Gzt2QIDCB2ra2t0OtQHaK-?pid=ImgDet&rs=1.png" alt=""> <span>Vingadores: Ultimato</span>
+      </li> 
+
+    <li><img src= "https://i0.wp.com/viventeandante.com/wp-content/uploads/2021/11/novo-homem-aranha-de-volta-para-casa.jpg?resize=819%2C1024&ssl=1.PNG" alt=""> <span>Homem Aranha: Sem Volta Para Casa</span>
+      </li> 
+      -->
+
+    </ul>
+  </div>
+
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>

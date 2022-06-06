@@ -1,0 +1,132 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://th.bing.com/th/id/R.9812b7ea4b8c20f7f0d43e31f4762c07?rik=CK4G0fCMZ0Lrdg&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f13%2f61%2fdGpuRB.jpg&ehk=jwQh2QhZ3cC0sDYkHjajBEJkDcJidcD%2bBY7hY96EWdE%3d&risl=&pid=ImgRaw&r=0");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  #listaFilmes img {
+    margin: 10px;
+    max-height: 250px;
+  }
+  
+  #listaFilmes li {
+    margin: 10px;
+    position: relative;
+  }
+  
+  #listaFilmes li button.excludeButton {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+  
+  #listaFilmes span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    background-color: #a00404;
+    padding: 5px 0;
+    border-radius: 0 0 5px 5px;
+    background-size: 30px;
+  }
+  
+  #listaFilmes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .form-wrapper {
+    margin: 0 0 15px;
+  }
+  
+  .form-wrapper input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+  
+  .form-wrapper button {
+    border: 0;
+    color: #ffffff;
+    background: #da1e26;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form-wrapper button:hover {
+    opacity: 0.8;
+  }
+  
+  p {
+    color: white;
+    font-size: 20px;
+    margin-right: 40px;
+  }
+  
+  .excludeButton {
+    border: 0;
+    color: #ffffff;
+    background: #da1e26;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 200px;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  h1 {
+    font-family: "Ariana";
+    color: #e80f0f;
+    font-size: 3.8rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
